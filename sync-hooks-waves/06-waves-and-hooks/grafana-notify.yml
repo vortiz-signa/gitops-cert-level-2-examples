@@ -3,10 +3,10 @@ kind: Job
 metadata:
   namespace: example06
   generateName: grafana-notify-
-  annotations:
-    argocd.argoproj.io/hook: Sync  
   labels:
     codefresh.io/cert: grafana-job  
+  annotations:
+    argocd.argoproj.io/hook: Sync 
 spec:
   template:
     spec:
